@@ -49,7 +49,7 @@ if (empty($crud->listarClientes())) {
     $crud->agregarCliente($cliente2);
 }
 
-// Agregar Productos si no existen
+// Agregar Productos si no existen 
 if (empty($crud->listarProductos())) {
     $producto1 = new Producto("Laptop", 1500);
     $producto2 = new Producto("Mouse", 25);

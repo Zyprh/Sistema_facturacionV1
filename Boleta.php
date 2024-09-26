@@ -6,7 +6,7 @@ require_once 'clases/Crud.php';
 
 $crud = new Crud();
 
-// Simulación de datos (en lugar de usar una base de datos)
+
 if (!isset($_SESSION['clientes'])) {
     $_SESSION['clientes'] = [
         new Cliente('Cliente 1', 'email'),
@@ -16,8 +16,8 @@ if (!isset($_SESSION['clientes'])) {
 
 if (!isset($_SESSION['productos'])) {
     $_SESSION['productos'] = [
-        new Producto('Producto 1', 10.00), // Asegúrate de pasar ambos argumentos
-        new Producto('Producto 2', 20.00), // Asegúrate de pasar ambos argumentos
+        new Producto('Producto 1', 10.00), 
+        new Producto('Producto 2', 20.00), 
     ];
 }
 ?>
